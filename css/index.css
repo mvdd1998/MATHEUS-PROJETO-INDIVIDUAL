@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow-x: hidden;
+  }
+ /*Inicio Cabeçalho */
+  .cabecalho {
+
+    padding-top: 10px;
+  background: #0c131d;
+  width: 100%;
+  height: 60px;
+  border-bottom:  3px solid crimson;
+  
+  }
+
+  
+  .caixa_cadastro{
+    max-width: 1080px;
+    height: 100%;
+    margin: 0 auto; 
+  }
+  .img_logo{
+    position: relative;
+    width: 7%;
+    top: -28px;
+  }
+
+  ul{
+    color: white;
+    list-style: none;
+
+  }
+
+  .item_cor{
+    color: crimson;
+  }
+
+  
+
+  .cabecalho nav{
+    float: right;
+    margin: 0%;
+  }
+
+  ul li {
+    display: inline;
+  margin-left: 20px;
+  font-size: medium;
+  color: white;
+  position: relative;
+  list-style: none;
+  right: 30%;
+  }
+
+  /*Fim Cabeçalho*/
+
+ 
+  .img_supreme{
+      width: 100%;
+  }
+
+  .superior .news{
+    position: relative;
+    left: 50%;
+}
+  }
+  /*Inicio Lista*/
+
+  .parte_inferior{
+    width: 100%;
+    height: 1000px;
+    padding-top: 10%;
+    
+  }
+
+  .lista_inferior{
+    position: relative;
+    width: 100%;
+    top: 15px;
+  }
+
+  .lista_inferior li{
+    margin: 0px;
+    display: inline-block;
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+.texto{
+color: crimson;
+text-shadow: 2px 0 #fffdd0;
+
+}
+
+.btn_vermais{
+    background-color: crimson;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.sneakers{
+    position: relative;
+    left: 10%;
+    top: -15px;
+    width: 20%;
+    margin-left: 15px;
+  }
+
+  /*Fim Lista*/
+
+
+  .rodape{
+  padding-top: 0px;
+  background: #0c131d;
+  width: 100%;
+  height: 100px;
+  color: crimson;
+  }
+
+  .rodape h4{
+    text-align: center;
+    position: relative;
+    top: 55%;
+  }
