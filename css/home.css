@@ -3,7 +3,6 @@ body {
     padding: 0;
     border: 0;
     overflow-x: hidden;
-    overflow-y: hidden;
   }
  /*Inicio Cabeçalho */
   .cabecalho {
@@ -17,7 +16,11 @@ body {
   }
 
   
-  
+  .caixa_cadastro{
+    max-width: 1080px;
+    height: 100%;
+    margin: 0 auto; 
+  }
   .img_logo{
     position: relative;
     width: 7%;
@@ -59,29 +62,63 @@ body {
       width: 100%;
   }
 
-.div_cadastro{
-  position: relative;
-  width: 100%;
   
+
+  .superior .news{
+    position: relative;
+    left: 50%;
+}
+  }
+  /*Inicio Lista*/
+
+  .parte_inferior{
+    width: 100%;
+    height: 1000px;
+    padding-top: 10%;
+    
+  }
+
+  .lista_inferior{
+    position: relative;
+    width: 100%;
+    top: 15px;
+
+  }
+
+  .lista_inferior li{
+    margin: 0px;
+    display: inline-block;
+    padding: 15px;
+    text-align: center;
 }
 
-.h2_cadastro{
-  color: crimson;
-  position: relative;
-  left: 43%;
+
+
+.texto{
+color: crimson;
+text-shadow: 2px 0 #fffdd0;
+
 }
 
-.btn_cadastrar{
-  left: 50%;
-position: relative;
-    margin-top: 15px;
-    border: 2px solid crimson;
-    color: white;
+.btn_vermais{
     background-color: crimson;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
     cursor: pointer;
-    height: 36px;
 }
-  
+
+.sneakers{
+    position: relative;
+    left: 5%;
+    top: -15px;
+    width: 20%;
+    margin-left: 15px;
+  }
+
+  /*Fim Lista*/
+
 
   .rodape{
   padding-top: 0px;

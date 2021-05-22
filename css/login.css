@@ -1,14 +1,12 @@
-body{
+body {
     margin: 0;
     padding: 0;
     border: 0;
     overflow-x: hidden;
     overflow-y: hidden;
-    
-
-}
-
-.cabecalho {
+  }
+ /*Inicio Cabeçalho */
+  .cabecalho {
 
     padding-top: 10px;
   background: #0c131d;
@@ -18,6 +16,12 @@ body{
   
   }
 
+  
+  .caixa_cadastro{
+    max-width: 1080px;
+    height: 100%;
+    margin: 0 auto; 
+  }
   .img_logo{
     position: relative;
     width: 7%;
@@ -30,15 +34,17 @@ body{
     list-style: none;
 
   }
+
+  .item_cor{
+    color: crimson;
+  }
+
   
+
   .cabecalho nav{
     float: right;
     margin: 0%;
   }
-
-  .item_colorido{
-    color: crimson;
-}
 
   ul li {
     display: inline;
@@ -50,11 +56,10 @@ body{
   right: 30%;
   }
 
-/*FIm cabeçalho*/
+  /*Fim Cabeçalho*/
 
-/*Inicio Cadastro*/
 
-.cadastro{
+  .login{
     position: relative;
     width: 40%;
     color: crimson ;
@@ -62,14 +67,14 @@ body{
     left: 10%;
 }
 
-.caixa_cadastro{
+.caixa_login{
     position: relative;
     background-color: white;
     box-shadow: 10px 10px 10px 7px #ccc;
     padding: 10% 0%;
     border-radius: 20px;
     left: 2%;
-    top: 45px;
+    top: 90px;
     color: crimson;;
     
 
@@ -79,26 +84,13 @@ body{
   text-align: center;
 }
 
-.select_custom{
-
-  position: relative;
-    left: 50%;
-    width: 11%;
-    height: 30px;
-    background-color: crimson;
-    color: white;
-    border: none;
-    top: 15px;
-}
-
-
 .img_logo2{
     position: relative;
-    top: -425px;
+    top: -311px;
     left: 60%;
 }
 
-.div_cadastro{
+.div_login{
     padding-top: 30px;
     
 }
@@ -126,20 +118,18 @@ body{
 }
 
 
-
-
 .rodape{
-  padding-top: 0px;
-  background: #0c131d;
-  width: 100%;
-  height: 100px;
-  color: crimson;
-  position: relative;
-  top: -367px;
-    }
-  
-    .rodape h4{
-      text-align: center;
-      position: relative;
-      top: 55%;
-    }
+    padding-top: 0px;
+    background: #0c131d;
+    width: 100%;
+    height: 100px;
+    color: crimson;
+    position: relative;
+    top: -242px;
+      }
+    
+      .rodape h4{
+        text-align: center;
+        position: relative;
+        top: 55%;
+      }
