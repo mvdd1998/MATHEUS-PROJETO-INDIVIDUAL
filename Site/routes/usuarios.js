@@ -42,7 +42,7 @@ router.post('/cadastrar', function(req, res, next) {
 	
 	Usuario.create({
 		nome : req.body.nome,
-		email : req.body.email,
+		login : req.body.login,
 		size : req.body.size,
 		senha: req.body.senha
 	}).then(resultado => {

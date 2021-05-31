@@ -41,7 +41,7 @@
             <h2 class="h2_texto">Cadastre e fique sabendo das novidades</h2>
             <br><br>
 
-            <div class="div_login">Email <input class="inp_padrao" name="email" id="inp_email"></div>
+            <div class="div_login">Email <input class="inp_padrao" name="login" id="inp_email"></div>
             <div class="div_login">Senha<input type="password" name="senha" class="inp_padrao" id="inp_senha"></div>
             <button class="btn_padrao">Entrar</button>
 
@@ -64,7 +64,7 @@
 <script>
 
 function entrar() {
-        aguardar();
+       
         var formulario = new URLSearchParams(new FormData(form_login));
         fetch("/usuarios/autenticar", {
             method: "POST",
@@ -87,7 +87,6 @@ function entrar() {
 
                 resposta.text().then(texto => {
                     console.error(texto);
-                    finalizar_aguardar(texto);
                 });
             }
         });
@@ -95,17 +94,6 @@ function entrar() {
         return false;
     }
 
-    function aguardar() {
-        btn_entrar.disabled = true;
-        img_aguarde.style.visibility = 'visible';
-        div_erro.style.visibility = 'hidden';
-    }
-
-    function finalizar_aguardar(resposta) {
-        btn_entrar.disabled = false;
-        img_aguarde.style.visibility = 'hidden';
-        div_erro.style.visibility = 'visible';
-        div_erro.innerHTML = resposta;
-    }
+  
 
 </script>

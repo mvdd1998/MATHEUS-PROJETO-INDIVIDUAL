@@ -18,14 +18,14 @@ module.exports = (sequelize, DataTypes) => {
 			type: DataTypes.STRING,
 			allowNull: false
 		},
-		email: {
-			field: 'email',
+		login: {
+			field: 'login',
 			type: DataTypes.STRING,
 			allowNull: false
 		},
 		size: {
 			field: 'size',
-			type: DataTypes.STRING,
+			type: DataTypes.INTEGER,
 			allowNull: false
 		},
 

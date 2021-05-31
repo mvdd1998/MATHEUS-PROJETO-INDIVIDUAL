@@ -45,12 +45,12 @@
     <div class="cadastro">
 
         <div class="caixa_cadastro">
-            <form id="form_cadastro" method="post" onsubmit="return cadastrar()"></form>
+            <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
             <h2 class="h2_texto">Cadastre e fique sabendo das novidades</h2>
             <br><br>
             <div class="div_cadastro">Nome <input class="inp_padrao" name="nome" id="inp_nome"></div>
 
-            <div class="div_cadastro">Email <input class="inp_padrao" name="email" id="inp_email"></div>
+            <div class="div_cadastro">Email <input class="inp_padrao" name="login" id="inp_email"></div>
 
             <select id="sizesnk" name="size" class="select_custom">
                 <option value="1">SIZE</option>
@@ -97,7 +97,6 @@
 <script>
 
     function cadastrar() {
-        aguardar();
         var formulario = new URLSearchParams(new FormData(form_cadastro));
         fetch("/usuarios/cadastrar", {
             method: "POST",
@@ -112,25 +111,12 @@
 
                 console.log('Erro de cadastro!');
                 response.text().then(function (resposta) {
-                    div_erro.innerHTML = resposta;
                 });
-                finalizar_aguardar();
             }
         });
 
         return false;
     }
 
-    function aguardar() {
-        btn_entrar.disabled = true;
-        img_aguarde.style.display = 'block';
-        div_erro.style.display = 'none';
-    }
-
-    function finalizar_aguardar() {
-        btn_entrar.disabled = false;
-        img_aguarde.style.display = 'none';
-        div_erro.style.display = 'block';
-    }
 
 </script>
