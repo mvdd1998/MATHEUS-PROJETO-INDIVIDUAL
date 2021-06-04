@@ -85,9 +85,9 @@ body {
     top: -550px;
   }
 
-  .inp_padrao{
+  .text_padrao{
     width: 25%;
-    height: 40px;
+    height: 45px;
     border-radius: 15px;
     border: 2px solid crimson;
     color: crimson;
@@ -101,6 +101,8 @@ body {
     cursor: pointer;
     width: 7%;
     height: 40px;
+    top: -20px;
+    position: relative;
   }
 
   .rodape{

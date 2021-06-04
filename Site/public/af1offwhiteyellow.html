@@ -72,12 +72,13 @@
     <div class="comentar">
 
         <div class="caixa_comentar">
-
-            <input class="inp_padrao" id="inp_comentario">
-            <button class="btn_padrao" onclick="comentario()">Enviar</button>
+            <form id="form_login" method="post" onsubmit="return publicar()">
+            <textarea class="text_padrao" maxlength="150" id="inp_comentario" name="descricao"></textarea>
+            <button class="btn_padrao">Enviar</button>
+        </form>
             <br><br>
-            <div id="msg"></div>
-
+            <div id="div_msg"></div>
+              
         </div>
     </div>
 
@@ -95,18 +96,70 @@
 
 
 
-    function comentario() {
+    function publicar() {
+
+        console.log("entrei");
+        aguardar();
+
+        var formulario = new URLSearchParams(new FormData(form_publicar));
+        var idusuario = sessionStorage.id_usuario_meuapp;
+        fetch(`/comentarios/comentar/${idusuario}`,{
+            method: "POST",
+            body: formulario
+
+        }).then(resposta => {
+
+            if(resposta.ok){
+                obterComentarios();
+
+                finalizarAguardar();
+
+            }else{
+                console.log("ERRO NA PUBLICAÇÂO");
+                resposta.text().then(texto =>{
+                    console.error(texto);
+                    finalizarAguardar(texto);
+                });
+            }
+        });
 
 
-        var comentar = [];
-
-
-        comentar.push(inp_comentario.value);
-
-        msg.innerHTML += `${comentar}<br><br>`;
+        return false;
 
     }
 
+    function atualizarFeed(comentarios) {
+        var feed = document.getElementById("div_msg");
+        feed.innerHTML = "";
+        
+        for(let i = 0; i < comentarios.length; i++) {
+
+            var comentar = comenatios[i];
+
+
+            var divComentario = document.createElement("div")
+            var divNome = document.createElement("div")
+            var divDescricao = document.createElement("div")
+
+            divNome.innerHTML = `${comentario.nome}: `;
+            divDescricao.innerHTML = comentario.descricao;
+
+
+            divComentario.className = "comentario";
+            divNome.className = "nome";
+            divDescricao.className = "descricao";
+
+            divComentario.appendChild(divNome);
+            divComentario.appendChild(divDescricao);
+
+            feed.appendChild(divComentario);
+
+        }
+    
+    
+    }
+
+    
     
 
 </script>
