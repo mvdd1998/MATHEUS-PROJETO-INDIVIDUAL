@@ -3,22 +3,44 @@ create database dropnike;
 use dropnike;
 
 create table usuario(
-idusuario int primary key auto_increment,
+id int primary key auto_increment,
 nome varchar (100),
 login varchar (100),
 size int,
 senha varchar (45)
 )auto_increment = 100;
 
+CREATE TABLE publicacao (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    descricao VARCHAR(100),
+    fkUsuario INT
+);
+
+CREATE TABLE publicacao2 (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    descricao VARCHAR(100),
+    fkUsuario INT
+);
+
+CREATE TABLE publicacao3 (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    descricao VARCHAR(100),
+    fkUsuario INT
+);
+
+CREATE TABLE publicacao4 (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    descricao VARCHAR(100),
+    fkUsuario INT
+);
+
+select * from publicacao4;
+
 select * from usuario;
 
 select avg(size) from usuario;
 
-create table comentar(
-idcomentar int primary key auto_increment,
-comentario varchar (150),
-fk_usuario int,
-foreign key (fk_usuario) references usuario(idusuario)
-) auto_increment = 1;
 
-select * from comentar;
+
+
+
