@@ -3,15 +3,15 @@ body {
     padding: 0;
     border: 0;
     overflow-x: hidden;
-    overflow-y: hidden;
+    
   }
  /*Inicio Cabeçalho */
   .cabecalho {
-
+    position: relative;
     padding-top: 10px;
   background: #0c131d;
   width: 100%;
-  height: 60px;
+  height: 5vw;
   border-bottom:  3px solid crimson;
   
   }
@@ -24,8 +24,7 @@ body {
   }
   .img_logo{
     position: relative;
-    width: 7%;
-    top: -28px;
+    width: 5vw;
     left: 3%;
   }
 
@@ -60,22 +59,22 @@ body {
 
 
   .login{
+    display: flex;
     position: relative;
-    width: 40%;
+    width: 100%;
     color: crimson ;
-    top: 15px;
-    left: 10%;
 }
 
 .caixa_login{
-    position: relative;
-    background-color: white;
-    box-shadow: 10px 10px 10px 7px #ccc;
-    padding: 10% 0%;
-    border-radius: 20px;
-    left: 2%;
-    top: 90px;
-    color: crimson;;
+  position: relative;
+  background-color: white;
+  box-shadow: 10px 10px 10px 7px #ccc;
+  border-radius: 20px;
+  color: crimson;
+  width: 40%;
+  margin: auto 2.5%;
+  padding: 2.5%;
+  height: 80%;
     
 
 }
@@ -85,9 +84,8 @@ body {
 }
 
 .img_logo2{
-    position: relative;
-    top: -311px;
-    left: 60%;
+  position: relative;
+  width: 100%;
 }
 
 .div_login{
@@ -117,15 +115,21 @@ body {
     
 }
 
+.div_img {
+  width: 40%;
+  float: right;
+  margin: 5%;
+}
+
 
 .rodape{
-    padding-top: 0px;
+    
     background: #0c131d;
     width: 100%;
     height: 100px;
     color: crimson;
     position: relative;
-    top: -242px;
+   
       }
     
       .rodape h4{

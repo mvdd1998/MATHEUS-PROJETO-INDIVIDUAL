@@ -1,5 +1,7 @@
 create database dropnike;
 
+
+
 use dropnike;
 
 create table usuario(
@@ -10,31 +12,17 @@ size int,
 senha varchar (45)
 )auto_increment = 100;
 
+
 CREATE TABLE publicacao (
     id INT PRIMARY KEY AUTO_INCREMENT,
     descricao VARCHAR(100),
-    fkUsuario INT
+    fkUsuario INT,
+    fkLancamento int
 );
 
-CREATE TABLE publicacao2 (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    descricao VARCHAR(100),
-    fkUsuario INT
-);
 
-CREATE TABLE publicacao3 (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    descricao VARCHAR(100),
-    fkUsuario INT
-);
 
-CREATE TABLE publicacao4 (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    descricao VARCHAR(100),
-    fkUsuario INT
-);
-
-select * from publicacao4;
+select * from publicacao;
 
 select * from usuario;
 

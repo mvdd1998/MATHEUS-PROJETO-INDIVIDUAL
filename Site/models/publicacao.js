@@ -17,6 +17,11 @@ module.exports = (sequelize, DataTypes) => {
             field: 'fkUsuario',
             type: DataTypes.INTEGER,
             allowNull: false
+        },
+		fkLancamento: {
+            field: 'fkLancamento',
+            type: DataTypes.INTEGER,
+            allowNull: true
         }
 	}, 
 	{
