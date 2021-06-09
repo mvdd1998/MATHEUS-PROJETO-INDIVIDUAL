@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login.css">
-    <title>Document</title>
+    <title>LOGIN</title>
 </head>
 
 <body>
@@ -42,21 +42,21 @@
 
     <div class="login">
         <div class="caixa_login">
-        <form id="form_login" method="post" onsubmit="return entrar()">
-            
+            <form id="form_login" method="post" onsubmit="return entrar()">
 
-                
-                
+
+
+
 
                 <div class="div_login">Email <input class="inp_padrao" name="login" id="inp_email"></div>
                 <div class="div_login">Senha<input type="password" name="senha" class="inp_padrao" id="inp_senha"></div>
                 <button class="btn_padrao">Entrar</button>
 
 
-            
 
-        </form>
-    </div>
+
+            </form>
+        </div>
         <div class="div_img">
             <img class="img_logo2" src="img/DROPMt.png" alt="Logo">
         </div>
@@ -101,6 +101,7 @@
 
                 resposta.text().then(texto => {
                     console.error(texto);
+                    alert("Login ou senha invalidos");
                 });
             }
         });
